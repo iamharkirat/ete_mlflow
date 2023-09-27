@@ -199,3 +199,406 @@ X===============X]
 [2023-09-26 15:54:34,272: INFO: main: >>>>>>> stage Data Transformation Stage completed <<<<<<<
 
 X===============X]
+[2023-09-26 20:38:59,482: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2023-09-26 20:38:59,485: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-26 20:38:59,488: INFO: common: yaml file: schema.yaml loaded successfully]
+[2023-09-26 20:38:59,489: INFO: common: created directory at: artifacts]
+[2023-09-26 20:38:59,490: INFO: common: created directory at: artifacts/model_trainer]
+[2023-09-26 20:47:23,662: INFO: main: >>>>>>> stage Data Ingestion Stage started <<<<<<<]
+[2023-09-26 20:47:23,664: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2023-09-26 20:47:23,665: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-26 20:47:23,666: INFO: common: yaml file: schema.yaml loaded successfully]
+[2023-09-26 20:47:23,666: INFO: common: created directory at: artifacts]
+[2023-09-26 20:47:23,666: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-09-26 20:47:25,089: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 23329
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "c69888a4ae59bc5a893392785a938ccd4937981c06ba8a9d6a21aa52b4ab5b6e"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: A89C:3B2E:12F93:1835F:6513A5CC
+Accept-Ranges: bytes
+Date: Wed, 27 Sep 2023 03:47:25 GMT
+Via: 1.1 varnish
+X-Served-By: cache-phx12424-PHX
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1695786445.995929,VS0,VE187
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: e3327e5476f868fdf0084f46823fdddaa62f062a
+Expires: Wed, 27 Sep 2023 03:52:25 GMT
+Source-Age: 0
+
+]
+[2023-09-26 20:47:25,095: INFO: main: >>>>>>> stage Data Ingestion Stage completed <<<<<<<
+
+X===============X]
+[2023-09-26 20:47:25,095: INFO: main: >>>>>>> stage Data Validation Stage started <<<<<<<]
+[2023-09-26 20:47:25,099: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2023-09-26 20:47:25,100: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-26 20:47:25,102: INFO: common: yaml file: schema.yaml loaded successfully]
+[2023-09-26 20:47:25,103: INFO: common: created directory at: artifacts]
+[2023-09-26 20:47:25,103: INFO: common: created directory at: artifacts/data_validation]
+[2023-09-26 20:47:25,112: INFO: main: >>>>>>> stage Data Validation Stage completed <<<<<<<
+
+X===============X]
+[2023-09-26 20:47:25,112: INFO: main: >>>>>>> stage Data Transformation Stage started <<<<<<<]
+[2023-09-26 20:47:25,115: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2023-09-26 20:47:25,116: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-26 20:47:25,118: INFO: common: yaml file: schema.yaml loaded successfully]
+[2023-09-26 20:47:25,118: INFO: common: created directory at: artifacts]
+[2023-09-26 20:47:25,118: INFO: common: created directory at: artifacts/data_transformation]
+[2023-09-26 20:47:25,149: INFO: data_transformation: Splited data into training and test sets]
+[2023-09-26 20:47:25,149: INFO: data_transformation: (1199, 12)]
+[2023-09-26 20:47:25,149: INFO: data_transformation: (400, 12)]
+[2023-09-26 20:47:25,149: INFO: main: >>>>>>> stage Data Transformation Stage completed <<<<<<<
+
+X===============X]
+[2023-09-26 20:47:25,149: INFO: main: >>>>>>> stage Model Trainer Stage started <<<<<<<]
+[2023-09-26 20:47:25,151: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2023-09-26 20:47:25,152: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-26 20:47:25,153: INFO: common: yaml file: schema.yaml loaded successfully]
+[2023-09-26 20:47:25,153: INFO: common: created directory at: artifacts]
+[2023-09-26 20:47:25,153: INFO: common: created directory at: artifacts/model_trainer]
+[2023-09-26 20:47:25,153: ERROR: main: ModelTrainerConfig() takes no arguments]
+Traceback (most recent call last):
+  File "/Users/harkiratchahal/Desktop/Coding/Tutorials/mlops/main.py", line 43, in <module>
+    obj.main()
+  File "/Users/harkiratchahal/Desktop/Coding/Tutorials/mlops/src/mlProject/pipeline/stage_04_model_trainer.py", line 13, in main
+    model_trainer_config = config.get_model_trainer_config()
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/harkiratchahal/Desktop/Coding/Tutorials/mlops/src/mlProject/config/configuration.py", line 71, in get_model_trainer_config
+    model_trainer_config = ModelTrainerConfig(
+                           ^^^^^^^^^^^^^^^^^^^
+TypeError: ModelTrainerConfig() takes no arguments
+[2023-09-26 20:48:44,603: INFO: main: >>>>>>> stage Data Ingestion Stage started <<<<<<<]
+[2023-09-26 20:48:44,605: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2023-09-26 20:48:44,606: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-26 20:48:44,607: INFO: common: yaml file: schema.yaml loaded successfully]
+[2023-09-26 20:48:44,607: INFO: common: created directory at: artifacts]
+[2023-09-26 20:48:44,607: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-09-26 20:48:45,156: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 23329
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "c69888a4ae59bc5a893392785a938ccd4937981c06ba8a9d6a21aa52b4ab5b6e"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: A89C:3B2E:12F93:1835F:6513A5CC
+Accept-Ranges: bytes
+Date: Wed, 27 Sep 2023 03:48:45 GMT
+Via: 1.1 varnish
+X-Served-By: cache-phx12428-PHX
+X-Cache: HIT
+X-Cache-Hits: 1
+X-Timer: S1695786525.254536,VS0,VE2
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: cca3a78ca7361d00f80c5a76b71111811b22d00a
+Expires: Wed, 27 Sep 2023 03:53:45 GMT
+Source-Age: 80
+
+]
+[2023-09-26 20:48:45,160: INFO: main: >>>>>>> stage Data Ingestion Stage completed <<<<<<<
+
+X===============X]
+[2023-09-26 20:48:45,160: INFO: main: >>>>>>> stage Data Validation Stage started <<<<<<<]
+[2023-09-26 20:48:45,162: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2023-09-26 20:48:45,163: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-26 20:48:45,164: INFO: common: yaml file: schema.yaml loaded successfully]
+[2023-09-26 20:48:45,165: INFO: common: created directory at: artifacts]
+[2023-09-26 20:48:45,165: INFO: common: created directory at: artifacts/data_validation]
+[2023-09-26 20:48:45,171: INFO: main: >>>>>>> stage Data Validation Stage completed <<<<<<<
+
+X===============X]
+[2023-09-26 20:48:45,172: INFO: main: >>>>>>> stage Data Transformation Stage started <<<<<<<]
+[2023-09-26 20:48:45,174: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2023-09-26 20:48:45,174: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-26 20:48:45,175: INFO: common: yaml file: schema.yaml loaded successfully]
+[2023-09-26 20:48:45,175: INFO: common: created directory at: artifacts]
+[2023-09-26 20:48:45,176: INFO: common: created directory at: artifacts/data_transformation]
+[2023-09-26 20:48:45,196: INFO: data_transformation: Splited data into training and test sets]
+[2023-09-26 20:48:45,197: INFO: data_transformation: (1199, 12)]
+[2023-09-26 20:48:45,197: INFO: data_transformation: (400, 12)]
+[2023-09-26 20:48:45,197: INFO: main: >>>>>>> stage Data Transformation Stage completed <<<<<<<
+
+X===============X]
+[2023-09-26 20:48:45,197: INFO: main: >>>>>>> stage Model Trainer Stage started <<<<<<<]
+[2023-09-26 20:48:45,198: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2023-09-26 20:48:45,199: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-26 20:48:45,200: INFO: common: yaml file: schema.yaml loaded successfully]
+[2023-09-26 20:48:45,200: INFO: common: created directory at: artifacts]
+[2023-09-26 20:48:45,200: INFO: common: created directory at: artifacts/model_trainer]
+[2023-09-26 20:48:45,200: ERROR: main: ModelTrainerConfig() takes no arguments]
+Traceback (most recent call last):
+  File "/Users/harkiratchahal/Desktop/Coding/Tutorials/mlops/main.py", line 43, in <module>
+    data_ingestion.main()
+  File "/Users/harkiratchahal/Desktop/Coding/Tutorials/mlops/src/mlProject/pipeline/stage_04_model_trainer.py", line 13, in main
+    model_trainer_config = config.get_model_trainer_config()
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/harkiratchahal/Desktop/Coding/Tutorials/mlops/src/mlProject/config/configuration.py", line 71, in get_model_trainer_config
+    model_trainer_config = ModelTrainerConfig(
+                           ^^^^^^^^^^^^^^^^^^^
+TypeError: ModelTrainerConfig() takes no arguments
+[2023-09-26 20:50:01,550: INFO: main: >>>>>>> stage Data Ingestion Stage started <<<<<<<]
+[2023-09-26 20:50:01,552: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2023-09-26 20:50:01,552: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-26 20:50:01,553: INFO: common: yaml file: schema.yaml loaded successfully]
+[2023-09-26 20:50:01,553: INFO: common: created directory at: artifacts]
+[2023-09-26 20:50:01,553: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-09-26 20:50:01,553: INFO: data_ingestion: File already exists of size: ~ 23 KB]
+[2023-09-26 20:50:01,555: INFO: main: >>>>>>> stage Data Ingestion Stage completed <<<<<<<
+
+X===============X]
+[2023-09-26 20:50:01,555: INFO: main: >>>>>>> stage Data Validation Stage started <<<<<<<]
+[2023-09-26 20:50:01,557: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2023-09-26 20:50:01,557: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-26 20:50:01,558: INFO: common: yaml file: schema.yaml loaded successfully]
+[2023-09-26 20:50:01,558: INFO: common: created directory at: artifacts]
+[2023-09-26 20:50:01,558: INFO: common: created directory at: artifacts/data_validation]
+[2023-09-26 20:50:01,564: INFO: main: >>>>>>> stage Data Validation Stage completed <<<<<<<
+
+X===============X]
+[2023-09-26 20:50:01,564: INFO: main: >>>>>>> stage Data Transformation Stage started <<<<<<<]
+[2023-09-26 20:50:01,565: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2023-09-26 20:50:01,566: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-26 20:50:01,567: INFO: common: yaml file: schema.yaml loaded successfully]
+[2023-09-26 20:50:01,567: INFO: common: created directory at: artifacts]
+[2023-09-26 20:50:01,567: INFO: common: created directory at: artifacts/data_transformation]
+[2023-09-26 20:50:01,590: INFO: data_transformation: Splited data into training and test sets]
+[2023-09-26 20:50:01,591: INFO: data_transformation: (1199, 12)]
+[2023-09-26 20:50:01,591: INFO: data_transformation: (400, 12)]
+[2023-09-26 20:50:01,591: INFO: main: >>>>>>> stage Data Transformation Stage completed <<<<<<<
+
+X===============X]
+[2023-09-26 20:50:01,591: INFO: main: >>>>>>> stage Model Trainer Stage started <<<<<<<]
+[2023-09-26 20:50:01,592: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2023-09-26 20:50:01,593: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-26 20:50:01,594: INFO: common: yaml file: schema.yaml loaded successfully]
+[2023-09-26 20:50:01,594: INFO: common: created directory at: artifacts]
+[2023-09-26 20:50:01,594: INFO: common: created directory at: artifacts/model_trainer]
+[2023-09-26 20:50:01,594: ERROR: main: ModelTrainerConfig() takes no arguments]
+Traceback (most recent call last):
+  File "/Users/harkiratchahal/Desktop/Coding/Tutorials/mlops/main.py", line 43, in <module>
+    data_ingestion.main()
+  File "/Users/harkiratchahal/Desktop/Coding/Tutorials/mlops/src/mlProject/pipeline/stage_04_model_trainer.py", line 13, in main
+    model_trainer_config = config.get_model_trainer_config()
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/harkiratchahal/Desktop/Coding/Tutorials/mlops/src/mlProject/config/configuration.py", line 69, in get_model_trainer_config
+    model_trainer_config = ModelTrainerConfig(
+                           ^^^^^^^^^^^^^^^^^^^
+TypeError: ModelTrainerConfig() takes no arguments
+[2023-09-26 20:50:44,826: INFO: main: >>>>>>> stage Data Ingestion Stage started <<<<<<<]
+[2023-09-26 20:50:44,828: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2023-09-26 20:50:44,829: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-26 20:50:44,830: INFO: common: yaml file: schema.yaml loaded successfully]
+[2023-09-26 20:50:44,830: INFO: common: created directory at: artifacts]
+[2023-09-26 20:50:44,830: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-09-26 20:50:44,830: INFO: data_ingestion: File already exists of size: ~ 23 KB]
+[2023-09-26 20:50:44,831: INFO: main: >>>>>>> stage Data Ingestion Stage completed <<<<<<<
+
+X===============X]
+[2023-09-26 20:50:44,831: INFO: main: >>>>>>> stage Data Validation Stage started <<<<<<<]
+[2023-09-26 20:50:44,833: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2023-09-26 20:50:44,833: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-26 20:50:44,834: INFO: common: yaml file: schema.yaml loaded successfully]
+[2023-09-26 20:50:44,834: INFO: common: created directory at: artifacts]
+[2023-09-26 20:50:44,834: INFO: common: created directory at: artifacts/data_validation]
+[2023-09-26 20:50:44,838: INFO: main: >>>>>>> stage Data Validation Stage completed <<<<<<<
+
+X===============X]
+[2023-09-26 20:50:44,838: INFO: main: >>>>>>> stage Data Transformation Stage started <<<<<<<]
+[2023-09-26 20:50:44,840: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2023-09-26 20:50:44,840: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-26 20:50:44,841: INFO: common: yaml file: schema.yaml loaded successfully]
+[2023-09-26 20:50:44,841: INFO: common: created directory at: artifacts]
+[2023-09-26 20:50:44,841: INFO: common: created directory at: artifacts/data_transformation]
+[2023-09-26 20:50:44,858: INFO: data_transformation: Splited data into training and test sets]
+[2023-09-26 20:50:44,859: INFO: data_transformation: (1199, 12)]
+[2023-09-26 20:50:44,859: INFO: data_transformation: (400, 12)]
+[2023-09-26 20:50:44,859: INFO: main: >>>>>>> stage Data Transformation Stage completed <<<<<<<
+
+X===============X]
+[2023-09-26 20:50:44,859: INFO: main: >>>>>>> stage Model Trainer Stage started <<<<<<<]
+[2023-09-26 20:50:44,860: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2023-09-26 20:50:44,860: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-26 20:50:44,861: INFO: common: yaml file: schema.yaml loaded successfully]
+[2023-09-26 20:50:44,862: INFO: common: created directory at: artifacts]
+[2023-09-26 20:50:44,862: INFO: common: created directory at: artifacts/model_trainer]
+[2023-09-26 20:50:44,862: ERROR: main: ModelTrainerConfig() takes no arguments]
+Traceback (most recent call last):
+  File "/Users/harkiratchahal/Desktop/Coding/Tutorials/mlops/main.py", line 43, in <module>
+    data_ingestion.main()
+  File "/Users/harkiratchahal/Desktop/Coding/Tutorials/mlops/src/mlProject/pipeline/stage_04_model_trainer.py", line 13, in main
+    model_trainer_config = config.get_model_trainer_config()
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/harkiratchahal/Desktop/Coding/Tutorials/mlops/src/mlProject/config/configuration.py", line 69, in get_model_trainer_config
+    model_trainer_config = ModelTrainerConfig(
+                           ^^^^^^^^^^^^^^^^^^^
+TypeError: ModelTrainerConfig() takes no arguments
+[2023-09-26 20:51:27,448: INFO: main: >>>>>>> stage Data Ingestion Stage started <<<<<<<]
+[2023-09-26 20:51:27,450: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2023-09-26 20:51:27,450: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-26 20:51:27,451: INFO: common: yaml file: schema.yaml loaded successfully]
+[2023-09-26 20:51:27,452: INFO: common: created directory at: artifacts]
+[2023-09-26 20:51:27,452: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-09-26 20:51:27,452: INFO: data_ingestion: File already exists of size: ~ 23 KB]
+[2023-09-26 20:51:27,453: INFO: main: >>>>>>> stage Data Ingestion Stage completed <<<<<<<
+
+X===============X]
+[2023-09-26 20:51:27,454: INFO: main: >>>>>>> stage Data Validation Stage started <<<<<<<]
+[2023-09-26 20:51:27,455: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2023-09-26 20:51:27,455: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-26 20:51:27,456: INFO: common: yaml file: schema.yaml loaded successfully]
+[2023-09-26 20:51:27,457: INFO: common: created directory at: artifacts]
+[2023-09-26 20:51:27,457: INFO: common: created directory at: artifacts/data_validation]
+[2023-09-26 20:51:27,461: INFO: main: >>>>>>> stage Data Validation Stage completed <<<<<<<
+
+X===============X]
+[2023-09-26 20:51:27,461: INFO: main: >>>>>>> stage Data Transformation Stage started <<<<<<<]
+[2023-09-26 20:51:27,462: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2023-09-26 20:51:27,463: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-26 20:51:27,464: INFO: common: yaml file: schema.yaml loaded successfully]
+[2023-09-26 20:51:27,464: INFO: common: created directory at: artifacts]
+[2023-09-26 20:51:27,464: INFO: common: created directory at: artifacts/data_transformation]
+[2023-09-26 20:51:27,482: INFO: data_transformation: Splited data into training and test sets]
+[2023-09-26 20:51:27,482: INFO: data_transformation: (1199, 12)]
+[2023-09-26 20:51:27,482: INFO: data_transformation: (400, 12)]
+[2023-09-26 20:51:27,482: INFO: main: >>>>>>> stage Data Transformation Stage completed <<<<<<<
+
+X===============X]
+[2023-09-26 20:51:27,482: INFO: main: >>>>>>> stage Model Trainer Stage started <<<<<<<]
+[2023-09-26 20:51:27,483: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2023-09-26 20:51:27,484: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-26 20:51:27,485: INFO: common: yaml file: schema.yaml loaded successfully]
+[2023-09-26 20:51:27,485: INFO: common: created directory at: artifacts]
+[2023-09-26 20:51:27,485: INFO: common: created directory at: artifacts/model_trainer]
+[2023-09-26 20:51:27,485: ERROR: main: ModelTrainerConfig() takes no arguments]
+Traceback (most recent call last):
+  File "/Users/harkiratchahal/Desktop/Coding/Tutorials/mlops/main.py", line 43, in <module>
+    data_ingestion.main()
+  File "/Users/harkiratchahal/Desktop/Coding/Tutorials/mlops/src/mlProject/pipeline/stage_04_model_trainer.py", line 13, in main
+    model_trainer_config = config.get_model_trainer_config()
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/harkiratchahal/Desktop/Coding/Tutorials/mlops/src/mlProject/config/configuration.py", line 69, in get_model_trainer_config
+    model_trainer_config = ModelTrainerConfig(
+                           ^^^^^^^^^^^^^^^^^^^
+TypeError: ModelTrainerConfig() takes no arguments
+[2023-09-26 20:52:32,670: INFO: main: >>>>>>> stage Data Ingestion Stage started <<<<<<<]
+[2023-09-26 20:52:32,672: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2023-09-26 20:52:32,673: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-26 20:52:32,674: INFO: common: yaml file: schema.yaml loaded successfully]
+[2023-09-26 20:52:32,674: INFO: common: created directory at: artifacts]
+[2023-09-26 20:52:32,674: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-09-26 20:52:32,674: INFO: data_ingestion: File already exists of size: ~ 23 KB]
+[2023-09-26 20:52:32,676: INFO: main: >>>>>>> stage Data Ingestion Stage completed <<<<<<<
+
+X===============X]
+[2023-09-26 20:52:32,676: INFO: main: >>>>>>> stage Data Validation Stage started <<<<<<<]
+[2023-09-26 20:52:32,678: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2023-09-26 20:52:32,678: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-26 20:52:32,679: INFO: common: yaml file: schema.yaml loaded successfully]
+[2023-09-26 20:52:32,680: INFO: common: created directory at: artifacts]
+[2023-09-26 20:52:32,680: INFO: common: created directory at: artifacts/data_validation]
+[2023-09-26 20:52:32,685: INFO: main: >>>>>>> stage Data Validation Stage completed <<<<<<<
+
+X===============X]
+[2023-09-26 20:52:32,685: INFO: main: >>>>>>> stage Data Transformation Stage started <<<<<<<]
+[2023-09-26 20:52:32,686: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2023-09-26 20:52:32,687: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-26 20:52:32,688: INFO: common: yaml file: schema.yaml loaded successfully]
+[2023-09-26 20:52:32,688: INFO: common: created directory at: artifacts]
+[2023-09-26 20:52:32,688: INFO: common: created directory at: artifacts/data_transformation]
+[2023-09-26 20:52:32,708: INFO: data_transformation: Splited data into training and test sets]
+[2023-09-26 20:52:32,709: INFO: data_transformation: (1199, 12)]
+[2023-09-26 20:52:32,709: INFO: data_transformation: (400, 12)]
+[2023-09-26 20:52:32,709: INFO: main: >>>>>>> stage Data Transformation Stage completed <<<<<<<
+
+X===============X]
+[2023-09-26 20:52:32,709: INFO: main: >>>>>>> stage Model Trainer Stage started <<<<<<<]
+[2023-09-26 20:52:32,710: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2023-09-26 20:52:32,711: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-26 20:52:32,712: INFO: common: yaml file: schema.yaml loaded successfully]
+[2023-09-26 20:52:32,712: INFO: common: created directory at: artifacts]
+[2023-09-26 20:52:32,712: INFO: common: created directory at: artifacts/model_trainer]
+[2023-09-26 20:52:32,727: INFO: main: >>>>>>> stage Model Trainer Stage completed <<<<<<<
+
+X===============X]
+[2023-09-26 20:52:46,090: INFO: main: >>>>>>> stage Data Ingestion Stage started <<<<<<<]
+[2023-09-26 20:52:46,092: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2023-09-26 20:52:46,093: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-26 20:52:46,094: INFO: common: yaml file: schema.yaml loaded successfully]
+[2023-09-26 20:52:46,094: INFO: common: created directory at: artifacts]
+[2023-09-26 20:52:46,094: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-09-26 20:52:46,933: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 23329
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "c69888a4ae59bc5a893392785a938ccd4937981c06ba8a9d6a21aa52b4ab5b6e"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: A89C:3B2E:12F93:1835F:6513A5CC
+Accept-Ranges: bytes
+Date: Wed, 27 Sep 2023 03:52:47 GMT
+Via: 1.1 varnish
+X-Served-By: cache-phx12434-PHX
+X-Cache: HIT
+X-Cache-Hits: 1
+X-Timer: S1695786767.927805,VS0,VE102
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: a565a545fb8afa9c22af50f8882f03704c81414a
+Expires: Wed, 27 Sep 2023 03:57:47 GMT
+Source-Age: 0
+
+]
+[2023-09-26 20:52:46,936: INFO: main: >>>>>>> stage Data Ingestion Stage completed <<<<<<<
+
+X===============X]
+[2023-09-26 20:52:46,936: INFO: main: >>>>>>> stage Data Validation Stage started <<<<<<<]
+[2023-09-26 20:52:46,939: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2023-09-26 20:52:46,940: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-26 20:52:46,942: INFO: common: yaml file: schema.yaml loaded successfully]
+[2023-09-26 20:52:46,942: INFO: common: created directory at: artifacts]
+[2023-09-26 20:52:46,943: INFO: common: created directory at: artifacts/data_validation]
+[2023-09-26 20:52:46,951: INFO: main: >>>>>>> stage Data Validation Stage completed <<<<<<<
+
+X===============X]
+[2023-09-26 20:52:46,951: INFO: main: >>>>>>> stage Data Transformation Stage started <<<<<<<]
+[2023-09-26 20:52:46,954: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2023-09-26 20:52:46,954: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-26 20:52:46,956: INFO: common: yaml file: schema.yaml loaded successfully]
+[2023-09-26 20:52:46,956: INFO: common: created directory at: artifacts]
+[2023-09-26 20:52:46,956: INFO: common: created directory at: artifacts/data_transformation]
+[2023-09-26 20:52:46,983: INFO: data_transformation: Splited data into training and test sets]
+[2023-09-26 20:52:46,983: INFO: data_transformation: (1199, 12)]
+[2023-09-26 20:52:46,983: INFO: data_transformation: (400, 12)]
+[2023-09-26 20:52:46,983: INFO: main: >>>>>>> stage Data Transformation Stage completed <<<<<<<
+
+X===============X]
+[2023-09-26 20:52:46,983: INFO: main: >>>>>>> stage Model Trainer Stage started <<<<<<<]
+[2023-09-26 20:52:46,985: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2023-09-26 20:52:46,985: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-26 20:52:46,986: INFO: common: yaml file: schema.yaml loaded successfully]
+[2023-09-26 20:52:46,986: INFO: common: created directory at: artifacts]
+[2023-09-26 20:52:46,986: INFO: common: created directory at: artifacts/model_trainer]
+[2023-09-26 20:52:46,996: INFO: main: >>>>>>> stage Model Trainer Stage completed <<<<<<<
+
+X===============X]
