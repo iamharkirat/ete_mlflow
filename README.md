@@ -72,11 +72,10 @@ Run this to export as env variables:
 
 ```bash
 
-export MLFLOW_TRACKING_URI=https://dagshub.com/entbappy/End-to-end-Machine-Learning-Project-with-MLflow.mlflow
-
-export MLFLOW_TRACKING_USERNAME=entbappy 
-
-export MLFLOW_TRACKING_PASSWORD=6824692c47a369aa6f9eac5b10041d5c8edbcef0
+export MLFLOW_TRACKING_URI=https://dagshub.com/iamharkirat/ete_mlflow.mlflow \
+export MLFLOW_TRACKING_USERNAME=iamharkirat \
+export MLFLOW_TRACKING_PASSWORD=3674ba2c6ee8b99eefb716575a7781d71ccbe637 \
+python script.py
 
 ```
 

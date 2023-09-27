@@ -2,7 +2,7 @@ from mlProject.config.configuration import ConfigurationManager
 from mlProject.components.data_validation import DataValidation
 from mlProject import logger
 
-STAGE_NAME = 'Data Validation Stage'
+STAGE_NAME = 'Data Validation'
 
 class DataValidationTrainingPipeline:
     def __init__(self):
