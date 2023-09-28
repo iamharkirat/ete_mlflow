@@ -114,7 +114,7 @@ python script.py
 
 	
 ## 3. Create ECR repo to store/save docker image
-    - Save the URI: 566373416292.dkr.ecr.ap-south-1.amazonaws.com/mlproj
+    - Save the URI: 262799773791.dkr.ecr.us-east-1.amazonaws.com/ete_mlops
 
 	
 ## 4. Create EC2 machine (Ubuntu) 
@@ -150,7 +150,7 @@ python script.py
 
     AWS_REGION = us-east-1
 
-    AWS_ECR_LOGIN_URI = demo>>  566373416292.dkr.ecr.ap-south-1.amazonaws.com
+    AWS_ECR_LOGIN_URI = demo>>  262799773791.dkr.ecr.us-east-1.amazonaws.com
 
     ECR_REPOSITORY_NAME = simple-app
 
