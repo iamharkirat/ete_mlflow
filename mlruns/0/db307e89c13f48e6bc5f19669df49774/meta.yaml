@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/harkiratchahal/Desktop/Coding/Tutorials/mlops/mlruns/0/db307e89c13f48e6bc5f19669df49774/artifacts
+end_time: 1695939832113
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: db307e89c13f48e6bc5f19669df49774
+run_name: efficient-sloth-522
+run_uuid: db307e89c13f48e6bc5f19669df49774
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1695939829999
+status: 3
+tags: []
+user_id: harkiratchahal
